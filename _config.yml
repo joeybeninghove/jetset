@@ -1,0 +1,30 @@
+title: Jekyllwind
+description: Jekyll + Tailwind = Love
+url: https://jekyllwind.com
+author: joeybeninghove
+twitter:
+  username: joeybeninghove
+  card: summary
+logo: /assets/logo.png
+social:
+  name: Joey Beninghove
+  links:
+    - https://twitter.com/joeybeninghove
+
+permalink: /:title/
+excerpt_separator: <!--more-->
+
+include:
+  - _redirects
+exclude:
+  - /src
+  - /Gemfile
+  - /Gemfile.lock
+  - /package.json
+  - /yarn.lock
+  - /yarn-error.log
+  - /node_modules
+  - /tailwind.js
+  - /webpack.config.js
+  - /postcss.config.js
+  - /README.md
