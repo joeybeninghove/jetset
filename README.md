@@ -15,13 +15,17 @@ out a production-ready Jekyll static site.
     to use
 * [BrowserSync](https://www.browsersync.io/) for live reloading of browser after
     code changes
+* [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) for generating SEO
+    tags
+* [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) for generating a
+    sitemap
 
 ## Setup
 
 1. `bundle install`
 2. `yarn install`
 
-## Dev Environment
+## Usage
 
 1. `rake serve`
 2. `yarn dev`
