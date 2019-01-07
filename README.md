@@ -25,7 +25,20 @@ out a production-ready Jekyll static site.
 1. `bundle install`
 2. `yarn install`
 
+## Directory Structure
+
+### `_src`
+
+All of the CSS, JS and images are stored in the `_src` directory, which is
+managed by Webpack.
+
 ## Usage
 
 1. `rake serve`
 2. `yarn dev`
+
+## The Process
+
+When Webpack runs, it compiles all of the assets into the `/assets` directory
+and then generates the base layout to `_layouts/base.html` with the appropriate
+`<link>` and `<script>` tags injected into it.
