@@ -1,8 +1,8 @@
 # jekyll-fun
 
 In kind of a spin-off of [fun](https://github.com/joeybeninghove/fun), this is a
-jekyll starter kit that can be used to quickly build out a production-ready
-jekyll static site.
+[Jekyll](https://jekyllrb.com/) starter kit that can be used to quickly build
+out a production-ready Jekyll static site.
 
 ## Features
 
