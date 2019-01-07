@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 module.exports = {
-  entry: path.resolve(__dirname, 'src/index.js'),
+  entry: path.resolve(__dirname, '_src/index.js'),
   devtool: "source-map",
   output: {
     filename: 'scripts.js',
@@ -31,7 +31,7 @@ module.exports = {
       {
         test: /\.css$/,
         include: [
-          path.resolve(__dirname, 'src/styles'),
+          path.resolve(__dirname, '_src/styles'),
         ],
         use: [
           { loader: MiniCssExtractPlugin.loader },
@@ -47,7 +47,7 @@ module.exports = {
       chunkFilename: "[id].css"
     }),
     new HtmlWebpackPlugin({
-      template: 'src/templates/base.html',
+      template: '_src/templates/base.html',
       filename: '../_layouts/base.html',
       hash: true
     }),
@@ -55,10 +55,10 @@ module.exports = {
       defaultAttribute: 'async'
     }),
     new CopyWebpackPlugin([{
-      from: path.resolve('src/images')
+      from: path.resolve('_src/images')
     }]),
     new CopyWebpackPlugin([{
-      from: path.resolve('src/images/favicons/favicon.ico'),
+      from: path.resolve('_src/images/favicons/favicon.ico'),
       to: path.resolve('./')
     }]),
     new BrowserSyncPlugin({
