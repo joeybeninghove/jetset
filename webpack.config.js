@@ -50,10 +50,11 @@ module.exports = env => {
       new HtmlWebpackPlugin({
         template: "_src/templates/base.html",
         filename: "../_layouts/base.html",
+        inject: "head",
         hash: true
       }),
       new ScriptExtHtmlWebpackPlugin({
-        defaultAttribute: "async"
+        defaultAttribute: "defer"
       }),
       new CopyWebpackPlugin([
         {

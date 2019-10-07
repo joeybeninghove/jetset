@@ -27,5 +27,8 @@
   "scripts": {
     "dev": "webpack --mode development --watch --env.NODE_ENV=development",
     "build": "webpack --mode production  --env.NODE_ENV=production"
+  },
+  "dependencies": {
+    "turbolinks": "^5.2.0"
   }
 }
