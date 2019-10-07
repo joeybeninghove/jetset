@@ -10,7 +10,7 @@ out a production-ready Jekyll static site.
 * [Tailwind](https://tailwindcss.com/) baked in for utility-first CSS
 * [Stimulus](https://stimulusjs.org/) as a lightweight javascript framework
 * [PostCSS](https://github.com/postcss/postcss) used to load Tailwind and make
-    [postcss-import](https://github.com/postcss/postcss-import) and 
+    [postcss-import](https://github.com/postcss/postcss-import) and
     [postcss-preset-env](https://github.com/csstools/postcss-preset-env) available
     to use
 * [BrowserSync](https://www.browsersync.io/) for live reloading of browser after
@@ -36,6 +36,8 @@ managed by Webpack.
 
 1. `rake serve`
 2. `yarn dev`
+
+Alternatively, if you have [foreman] installed, you can `foreman start` and both the web and webpack instances will be started.
 
 ## The Process
 
