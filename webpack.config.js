@@ -48,9 +48,9 @@ module.exports = env => {
         chunkFilename: "[id].css"
       }),
       new HtmlWebpackPlugin({
-        template: "_src/templates/base.html",
-        filename: "../_layouts/base.html",
-        inject: "head",
+        template: "_src/templates/packs.html",
+        filename: "../_includes/packs.html",
+        inject: false,
         hash: true
       }),
       new ScriptExtHtmlWebpackPlugin({
