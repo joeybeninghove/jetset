@@ -24,7 +24,10 @@ exclude:
   - /yarn.lock
   - /yarn-error.log
   - /node_modules
-  - /tailwind.js
+  - /tailwind.config.js
   - /webpack.config.js
   - /postcss.config.js
+  - /purgecss.config.js
+  - /Procfile.dev
+  - /Rakefile
   - /README.md
